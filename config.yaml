@@ -1,0 +1,38 @@
+# Voice Activator System Configuration
+voice_auth:
+  # Voice recognition settings
+  sample_rate: 16000
+  chunk_size: 1024
+  channels: 1
+  recognition_threshold: 0.85
+  
+  # Hotwords and commands
+  activation_phrase: "hey jarvis"
+  login_command: "unlock computer"
+  logout_command: "lock down system"
+  
+  # Voice model settings
+  model_path: "models/voice_model.pkl"
+  training_samples: 10
+  
+# Security settings
+security:
+  max_failed_attempts: 3
+  lockout_duration: 300  # 5 minutes
+  password_automation: true
+  
+# UI settings
+ui:
+  overlay_color: "#000000"
+  robot_face_animation: true
+  challenge_messages:
+    - "Voice identification required"
+    - "Who goes there?"
+    - "State your identity"
+    - "Access restricted - authenticate yourself"
+  
+# System integration
+system:
+  startup_service: true
+  log_level: "INFO"
+  log_file: "logs/voice_activator.log"

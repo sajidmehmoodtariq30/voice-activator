@@ -1,0 +1,25 @@
+# Core dependencies for Voice Activator System
+speech_recognition
+pyaudio
+numpy
+scipy
+
+# Windows system integration  
+pywin32
+psutil
+
+# GUI and overlay system
+Pillow
+
+# Voice processing and ML
+scikit-learn
+librosa
+
+# Configuration and logging
+pyyaml
+colorlog
+
+# Development tools
+pytest
+black
+flake8
